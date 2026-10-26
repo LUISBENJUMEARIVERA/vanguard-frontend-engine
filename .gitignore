@@ -8,3 +8,5 @@ Thumbs.db
 *.log
 .env
 .env.local
+skills-lock.json
+.agents/
