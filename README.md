@@ -22,14 +22,18 @@
 
 ## ⚡ 1-COMMAND GLOBAL INSTALLATION
 
-Instala la skill directamente en el directorio global de **Google Antigravity** (`~/.gemini/antigravity/skills/`):
+### 🌐 Vía skills.sh (Universal Agent Skills Directory)
+Compatible con Claude Code, Cursor, Codex, OpenCode y Antigravity:
+```bash
+npx skills add LUISBENJUMEARIVERA/vanguard-frontend-engine -g
+```
 
-### 🍎 Linux & macOS (Bash / Zsh)
+### 🍎 Linux & macOS (Direct Bash / Zsh)
 ```bash
 curl -fsSL https://raw.githubusercontent.com/LUISBENJUMEARIVERA/vanguard-frontend-engine/main/install.sh | bash
 ```
 
-### 🪟 Windows (PowerShell)
+### 🪟 Windows (Direct PowerShell)
 ```powershell
 irm https://raw.githubusercontent.com/LUISBENJUMEARIVERA/vanguard-frontend-engine/main/install.ps1 | iex
 ```
