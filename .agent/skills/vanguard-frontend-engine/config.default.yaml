@@ -1,0 +1,65 @@
+# Vanguard Frontend Engine Configuration Presets
+version: "1.0.0"
+engine: "vanguard-frontend-engine"
+target: "google-antigravity"
+
+manifesto:
+  enforce_anti_generic: true
+  banned_colors:
+    - "#6366f1" # Indigo-500
+    - "#3b82f6" # Blue-500
+    - "#8b5cf6" # Violet-500
+    - "#ec4899" # Pink-500
+  allowed_void_canvas:
+    - "#08080a"
+    - "#0b0c10"
+    - "#050505"
+  accents:
+    acid_lime: "#d4ff00"
+    acid_cyan: "#00f5ff"
+    acid_flame: "#ff4d00"
+    electric_yellow: "#ffe600"
+
+archetypes:
+  default: "dark-cyberpunk"
+  available:
+    - id: "kinetic"
+      name: "Kinetic Scroll-driven"
+      animation_intensity: "high"
+      primary_accent: "#d4ff00"
+    - id: "brutalism"
+      name: "Brutalismo Editorial"
+      animation_intensity: "minimal"
+      primary_accent: "#ff4d00"
+    - id: "swiss"
+      name: "Minimalismo Suizo"
+      animation_intensity: "controlled"
+      primary_accent: "#ffffff"
+    - id: "cyberpunk"
+      name: "Dark Cyberpunk"
+      animation_intensity: "controlled"
+      primary_accent: "#00f5ff"
+
+questionnaire:
+  enabled: true
+  questions:
+    - id: "visual_style"
+      label: "Visual Aesthetic Archetype"
+      options:
+        - "Kinetic Scroll-driven"
+        - "Brutalismo Editorial"
+        - "Minimalismo Suizo"
+        - "Dark Cyberpunk"
+    - id: "frontend_stack"
+      label: "Frontend Target Stack"
+      options:
+        - "Astro + React + Tailwind"
+        - "Next.js (App Router) + Tailwind"
+        - "Vite + React / Svelte"
+        - "Vanilla HTML + Modern CSS"
+    - id: "animation_level"
+      label: "Animation Intensity Level"
+      options:
+        - "Brutal Minimal (0-10%)"
+        - "Controlled Friction (30-50%)"
+        - "Kinetic Overload (80-100%)"
