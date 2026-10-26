@@ -50,8 +50,8 @@ export const VanguardHero: React.FC = () => {
   const [activeArchetype, setActiveArchetype] = useState(ARCHETYPES[0].id);
 
   const installCmds = {
-    unix: 'curl -fsSL https://raw.githubusercontent.com/vanguard-frontend/vanguard-engine/main/install.sh | bash',
-    ps: 'irm https://raw.githubusercontent.com/vanguard-frontend/vanguard-engine/main/install.ps1 | iex',
+    unix: 'curl -fsSL https://raw.githubusercontent.com/LUISBENJUMEARIVERA/vanguard-frontend-engine/main/install.sh | bash',
+    ps: 'irm https://raw.githubusercontent.com/LUISBENJUMEARIVERA/vanguard-frontend-engine/main/install.ps1 | iex',
   };
 
   const copyToClipboard = (text: string, key: string) => {

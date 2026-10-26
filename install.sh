@@ -32,7 +32,7 @@ if [ -f "$SCRIPT_DIR/.agent/skills/vanguard-frontend-engine/SKILL.md" ]; then
     cp -r "$SCRIPT_DIR/.agent/skills/vanguard-frontend-engine/"* "$TARGET_DIR/"
 else
     echo "Fetching latest version from GitHub repository..."
-    RAW_BASE="https://raw.githubusercontent.com/vanguard-frontend/vanguard-engine/main/.agent/skills/vanguard-frontend-engine"
+    RAW_BASE="https://raw.githubusercontent.com/LUISBENJUMEARIVERA/vanguard-frontend-engine/main/.agent/skills/vanguard-frontend-engine"
     curl -fsSL "$RAW_BASE/SKILL.md" -o "$TARGET_DIR/SKILL.md"
     curl -fsSL "$RAW_BASE/config.default.yaml" -o "$TARGET_DIR/config.default.yaml"
 fi

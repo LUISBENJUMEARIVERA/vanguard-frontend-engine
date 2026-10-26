@@ -1,8 +1,8 @@
 # VANGUARD FRONTEND ENGINE (VFE) ⚡
 
-[![Antigravity Skill](https://img.shields.io/badge/Antigravity-Agent%20Skill-00f5ff?style=for-the-badge&logo=google&logoColor=white)](https://github.com)
+[![Antigravity Skill](https://img.shields.io/badge/Antigravity-Agent%20Skill-00f5ff?style=for-the-badge&logo=google&logoColor=white)](https://github.com/LUISBENJUMEARIVERA/vanguard-frontend-engine)
 [![License: MIT](https://img.shields.io/badge/License-MIT-d4ff00?style=for-the-badge&logoColor=black)](LICENSE)
-[![UI: Anti--Generic](https://img.shields.io/badge/UI-Anti--Generic%20Manifesto-ff4d00?style=for-the-badge)](SKILL.md)
+[![UI: Anti--Generic](https://img.shields.io/badge/UI-Anti--Generic%20Manifesto-ff4d00?style=for-the-badge)](.agent/skills/vanguard-frontend-engine/SKILL.md)
 [![Showcase: Astro + React](https://img.shields.io/badge/Stack-Astro%20%7C%20React%20%7C%20Tailwind-white?style=for-the-badge&logo=astro)](src/)
 
 > **High-Agency Creative Frontend Engine & Elite Agent Skill for Google Antigravity.**  
@@ -26,12 +26,12 @@ Instala la skill directamente en el directorio global de **Google Antigravity** 
 
 ### 🍎 Linux & macOS (Bash / Zsh)
 ```bash
-curl -fsSL https://raw.githubusercontent.com/vanguard-frontend/vanguard-engine/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/LUISBENJUMEARIVERA/vanguard-frontend-engine/main/install.sh | bash
 ```
 
 ### 🪟 Windows (PowerShell)
 ```powershell
-irm https://raw.githubusercontent.com/vanguard-frontend/vanguard-engine/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/LUISBENJUMEARIVERA/vanguard-frontend-engine/main/install.ps1 | iex
 ```
 
 *O si clonaste este repositorio localmente:*

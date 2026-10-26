@@ -32,7 +32,7 @@ if ($ScriptDir -and (Test-Path (Join-Path $ScriptDir ".agent\skills\vanguard-fro
     Copy-Item -Path (Join-Path $ScriptDir ".agent\skills\vanguard-frontend-engine\*") -Destination $TargetDir -Recurse -Force
 } else {
     Write-Host "Fetching latest version from GitHub repository..."
-    $RawBase = "https://raw.githubusercontent.com/vanguard-frontend/vanguard-engine/main/.agent/skills/vanguard-frontend-engine"
+    $RawBase = "https://raw.githubusercontent.com/LUISBENJUMEARIVERA/vanguard-frontend-engine/main/.agent/skills/vanguard-frontend-engine"
     Invoke-WebRequest -Uri "$RawBase/SKILL.md" -OutFile (Join-Path $TargetDir "SKILL.md")
     Invoke-WebRequest -Uri "$RawBase/config.default.yaml" -OutFile (Join-Path $TargetDir "config.default.yaml")
 }
