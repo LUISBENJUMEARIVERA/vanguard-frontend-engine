@@ -1,13 +1,13 @@
-<#
+﻿<#
 .SYNOPSIS
     Vanguard Frontend Engine - 1-Command Windows Installer for Google Antigravity.
 #>
 
 $ErrorActionPreference = "Stop"
 
-$Lime = "`e[38;2;212;255;0m"
-$Cyan = "`e[38;2;0;245;255m"
-$Reset = "`e[0m"
+$Lime = [char]27 + "[38;2;212;255;0m"
+$Cyan = [char]27 + "[38;2;0;245;255m"
+$Reset = [char]27 + "[0m"
 
 Write-Host "$Lime"
 Write-Host "  __   __ _   _  _  ____ _   _   _   ____  ____  "
@@ -15,7 +15,7 @@ Write-Host "  \ \ / // \ | \| |/ ___| | | | / \ |  _ \|  _ \ "
 Write-Host "   \ V // _ \| .  | |  _| | | |/ _ \| |_) | | | |"
 Write-Host "    \_//_/ \_\_|\_|\____|\___//_/ \_\_|_ <|____/ "
 Write-Host "$Reset"
-Write-Host "$Cyan:: VANGUARD FRONTEND ENGINE — ANTIGRAVITY SKILL INSTALLER ::$Reset`n"
+Write-Host "$Cyan:: VANGUARD FRONTEND ENGINE — ANTIGRAVITY SKILL INSTALLER ::$Reset"
 
 $TargetDir = Join-Path $HOME ".gemini\antigravity\skills\vanguard-frontend-engine"
 
@@ -37,6 +37,6 @@ if ($ScriptDir -and (Test-Path (Join-Path $ScriptDir ".agent\skills\vanguard-fro
     Invoke-WebRequest -Uri "$RawBase/config.default.yaml" -OutFile (Join-Path $TargetDir "config.default.yaml")
 }
 
-Write-Host "`n$Lime`[SUCCESS] Vanguard Frontend Engine installed successfully!$Reset"
+Write-Host "`n$Lime[SUCCESS] Vanguard Frontend Engine installed successfully!$Reset"
 Write-Host "Skill registered at: $TargetDir"
-Write-Host "Google Antigravity is now armed with high-agency anti-generic frontend directives.`n"
+Write-Host "Google Antigravity is now armed with high-agency anti-generic frontend directives."
