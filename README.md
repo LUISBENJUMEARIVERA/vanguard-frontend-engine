@@ -32,10 +32,15 @@
 ## ⚡ 1-COMMAND GLOBAL INSTALLATION
 
 ### 🌐 Via skills.sh (Universal Agent Skills Directory)
-Compatible across Claude Code, Cursor, Codex, OpenCode, and Antigravity:
+Installs cleanly across your active agents (Claude Code, Cursor, Antigravity, Windsurf, etc.):
 ```bash
-npx skills add LUISBENJUMEARIVERA/vanguard-frontend-engine -g
+npx skills add LUISBENJUMEARIVERA/vanguard-frontend-engine -g -y
 ```
+
+> **Targeted agents (recommended for 100% clean output without legacy CLI warnings):**
+> ```bash
+> npx skills add LUISBENJUMEARIVERA/vanguard-frontend-engine -g -a antigravity claude-code cursor windsurf -y
+> ```
 
 ### 🍎 Linux & macOS (Direct Bash / Zsh)
 ```bash
