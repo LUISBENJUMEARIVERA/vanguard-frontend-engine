@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
     Vanguard Frontend Engine - 1-Command Windows Installer for Google Antigravity.
 #>
@@ -17,12 +17,16 @@ Write-Host "    \_//_/ \_\_|\_|\____|\___//_/ \_\_|_ <|____/ "
 Write-Host "$Reset"
 Write-Host "$Cyan:: VANGUARD FRONTEND ENGINE — ANTIGRAVITY SKILL INSTALLER ::$Reset"
 
-$TargetDir = Join-Path $HOME ".gemini\antigravity\skills\vanguard-frontend-engine"
+$TargetDir = Join-Path $HOME ".gemini\config\skills\vanguard-frontend-engine"
+$LegacyDir = Join-Path $HOME ".gemini\antigravity\skills\vanguard-frontend-engine"
 
 Write-Host "Target directory: $TargetDir"
 
 if (-not (Test-Path $TargetDir)) {
     New-Item -ItemType Directory -Path $TargetDir -Force | Out-Null
+}
+if (-not (Test-Path $LegacyDir)) {
+    New-Item -ItemType Directory -Path $LegacyDir -Force | Out-Null
 }
 
 $ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
@@ -30,11 +34,13 @@ $ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 if ($ScriptDir -and (Test-Path (Join-Path $ScriptDir ".agent\skills\vanguard-frontend-engine\SKILL.md"))) {
     Write-Host "Copying from local repository..."
     Copy-Item -Path (Join-Path $ScriptDir ".agent\skills\vanguard-frontend-engine\*") -Destination $TargetDir -Recurse -Force
+    Copy-Item -Path (Join-Path $ScriptDir ".agent\skills\vanguard-frontend-engine\*") -Destination $LegacyDir -Recurse -Force
 } else {
     Write-Host "Fetching latest version from GitHub repository..."
     $RawBase = "https://raw.githubusercontent.com/LUISBENJUMEARIVERA/vanguard-frontend-engine/main/.agent/skills/vanguard-frontend-engine"
     Invoke-WebRequest -Uri "$RawBase/SKILL.md" -OutFile (Join-Path $TargetDir "SKILL.md")
     Invoke-WebRequest -Uri "$RawBase/config.default.yaml" -OutFile (Join-Path $TargetDir "config.default.yaml")
+    Copy-Item -Path (Join-Path $TargetDir "*") -Destination $LegacyDir -Recurse -Force
 }
 
 Write-Host "`n$Lime[SUCCESS] Vanguard Frontend Engine installed successfully!$Reset"
