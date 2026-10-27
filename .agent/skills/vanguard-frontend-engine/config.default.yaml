@@ -1,10 +1,11 @@
 # Vanguard Frontend Engine Configuration Presets
-version: "1.0.0"
+version: "1.1.0"
 engine: "vanguard-frontend-engine"
-target: "google-antigravity"
+target: "universal-ai-agents"
 
 manifesto:
   enforce_anti_generic: true
+  hard_gate_interview: true # If true, forces agent to halt and ask the 3 questions prior to file writes
   banned_colors:
     - "#6366f1" # Indigo-500
     - "#3b82f6" # Blue-500
@@ -40,8 +41,19 @@ archetypes:
       animation_intensity: "controlled"
       primary_accent: "#00f5ff"
 
+unattended_defaults:
+  # Used ONLY if the user explicitly supplies the flag '--skip-interview' or says 'use defaults'
+  archetype: "dark-cyberpunk"
+  frontend_stack: "astro-react-tailwind"
+  animation_intensity: "controlled-friction"
+  design_variance: 8
+  motion_intensity: 6
+  visual_density: 7
+
 questionnaire:
   enabled: true
+  mandatory_first_turn: true
+  allow_auto_generation_without_user_input: false
   questions:
     - id: "visual_style"
       label: "Visual Aesthetic Archetype"
