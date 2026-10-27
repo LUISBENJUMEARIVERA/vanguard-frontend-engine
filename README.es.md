@@ -81,8 +81,17 @@ Vanguard Frontend Engine inyecta directivas y restricciones no negociables en la
 
 Al invocarse en un agente, la skill calibra rigurosamente los requerimientos antes de escribir código frontend:
 1. **Estilo Visual:** Kinetic / Brutalismo / Suizo / Cyberpunk.
-2. **Stack Frontend:** Astro + React / Next.js (App Router) / Vite / Modern Vanilla.
+2. **Stack Frontend:** Astro + React / Next.js (App Router) / Vite / Mobile (React Native / Flutter / SwiftUI) / Modern Vanilla.
 3. **Nivel de Animación:** Brutal Minimal (0-10%) / Controlled Friction (30-50%) / Kinetic Overload (80-100%).
+
+---
+
+## 💎 SÍNTESIS: ANTHROPIC FRONTEND DESIGN + UI/UX PRO MAX
+
+Vanguard Frontend Engine fusiona lo más selecto de dos mundos líderes en diseño:
+* **Principios de Anthropic Frontend Design:** Anclaje radical en el sujeto/industria, abolición de plantillas SaaS genéricas con degradados morados o tarjetas idénticas, hero conceptual con tesis de producto, y copywriting activo directo sin disculpas melodramáticas.
+* **Matriz de Prioridad UI/UX Pro Max:** 10 niveles jerárquicos de calidad y estándares de producción (Accesibilidad WCAG 4.5:1, touch targets de 44x44px, CLS < 0.1, física de amortiguación spring y checklist riguroso pre-entrega).
+* **Ciclo de 4 Fases:** `Plan` (sistema compacto de tokens) ➔ `Review` (autocrítica anti-cliché de IA) ➔ `Build` (construcción con tokens limpios) ➔ `Polish` (auditoría pre-entrega).
 
 ---
 

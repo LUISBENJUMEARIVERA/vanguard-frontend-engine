@@ -81,8 +81,17 @@ Vanguard Frontend Engine enforces non-negotiable styling directives and layout b
 
 When triggered, the skill strictly calibrates requirements prior to writing any frontend component:
 1. **Visual Style Archetype:** Kinetic / Brutalism / Swiss / Cyberpunk.
-2. **Frontend Architecture:** Astro + React / Next.js (App Router) / Vite / Modern Vanilla.
+2. **Frontend Architecture:** Astro + React / Next.js (App Router) / Vite / Mobile (React Native / Flutter / SwiftUI) / Modern Vanilla.
 3. **Motion Intensity:** Brutal Minimal (0-10%) / Controlled Friction (30-50%) / Kinetic Overload (80-100%).
+
+---
+
+## 💎 SYNTHESIS: ANTHROPIC FRONTEND DESIGN + UI/UX PRO MAX
+
+Vanguard Frontend Engine blends the best of world-class design studio intelligence:
+* **Anthropic Subject-Grounded Principles:** Replaces AI tropes with contextual relevance. Banning generic cream SaaS cards and fake gradient accents, enforcing purposeful hero thesis statements, disciplined typography limits, and active conversational microcopy.
+* **UI/UX Pro Max 10-Tier Rule Matrix:** Enforces rigorous engineering benchmarks: WCAG AAA 4.5:1 contrast, 44x44px touch targets, CLS < 0.1 performance, spring physics, and exhaustive pre-delivery checklists.
+* **4-Phase Creation Cycle:** `Plan` (compact token system) ➔ `Review` (self-critique against AI clichés) ➔ `Build` (clean CSS tokens) ➔ `Polish` (pre-delivery audit).
 
 ---
 
